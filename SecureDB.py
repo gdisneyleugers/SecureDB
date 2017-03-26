@@ -9,6 +9,11 @@ def SanityCheck(db):
                 print "Not SecureDB!"
                 return False
 
+def DbCreate(db):
+        _db = open('{}.sdb'.format(db), 'wb+')
+        _db.close()
+        return "Created: {0}.sdb".format(db)
+
 def DbWrite(db,entry):
         if SanityCheck(db) == True:
                 _db = file(db, 'ab')
