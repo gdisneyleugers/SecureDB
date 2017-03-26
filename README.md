@@ -1,7 +1,7 @@
 # SecureDB
 HS512-JWS NoSQL key based DB
 
-----                                       ~
+----
 
 $ python SecureDBTest.py  
 Created: test.sdb
