@@ -3,7 +3,7 @@ HS512-JWS NoSQL key based DB
 
 ----                                       ~
 
-$ SecureDBTest.py                 ~/SecureDB
+$ python SecureDBTest.py  
 Created: test.sdb
 
 INSERT TEST:
