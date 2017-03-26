@@ -34,8 +34,8 @@ def DbGetEntry(db,entry):
 def DbKeys(db):
         if SanityCheck(db) == True:
                 keys = []
-                for i, l in enumerate(file(db,'rb').readlines(),1):
-                        _key = "[{0}] {1}".format(i,l)
+                for i, l in enumerate(file(db,'rb').readlines(),0):
+                        _key = "{"+" {0}: {1}".format(i,l.strip("\n"))+"}"
                         keys.append(_key)
                 return keys
 
