@@ -3,7 +3,8 @@ HS512-JWS NoSQL key based DB
 
 ----
 
-$ python SecureDBTest.py                                                                                                                   -                                                             ~
+$ python SecureDBTest.py                                                                                                                  -                                                             ~
+
 KEYS TEST:
 [1] eyJhbGciOiJIUzI1NiJ9.InsgdGFibGVfMTogeydpbnNlcnRfdGVzdCc6ICdwYXNzZWQhJywgJ3JhbmRvbV9kYXRhJzogJ1cxNTRZVjg1NjZDMzhZTlk0T1hMRjFVTFdENk1QUFA3RDdDOFVMVjQyTzlaMldQREdFSExEVk0yT1RGNDZKNVE1QVgwUzgyT09KRkwxNVNGSjRNTVE4QUY4OE41NVRLSjhGQVBDU1RQM0FCRUVVOFdOM1RJTEZaQlRHSjRDQ0ZHM0dQN0g2SDEwSTQ2VVFYWFY0MVBZREhPMTI0TE1NN1pMMlhES0dTSE5GVFRKMlNNMllEME1MOEI3VzczVUUyUTdXOFQ4VTY4Sk84Q1I0R01NN0xWTzcxQVlIOVdXVE5ZQ1pPTThQN0lBTU1UVDI1Nk9DN1hJTlRBMlREOEZNTzknLCAnc2VjdXJlREInOiAnaXMgQXdlc29tZSEnfX0i.C7NjuSi5uKPP0GdXl4ZTa42TmYzUwfqJsnv3UX0wHLU
 -
