@@ -24,7 +24,9 @@ KEYS TEST:
 
 # SecureAPI
 
-curl http://127.0.0.1:5000/test/keys | python -mjson.tool      
+curl http://127.0.0.1:5000/test/keys | python -mjson.tool    
+
+
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   523  100   523    0     0    523      0  0:00:01 --:--:--  0:00:01  510k
@@ -34,7 +36,11 @@ curl http://127.0.0.1:5000/test/keys | python -mjson.tool
     ]
 }
 
-curl http://127.0.0.1:5000/test/get/0 | python -mjson.tool     ~/SecureDB 1
+
+
+curl http://127.0.0.1:5000/test/get/0 | python -mjson.tool
+
+
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   512  100   512    0     0  34133      0 --:--:-- --:--:-- --:--:-- 34133
