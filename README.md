@@ -21,3 +21,26 @@ Decrypted Entry [1]: { table_1: {'keys': 'Keys are defined by row ident', 'encry
 KEYS TEST:
 
 { 0: eyJhbGciOiJIUzI1NiJ9.InsgdGFibGVfMTogeydrZXlzJzogJ0tleXMgYXJlIGRlZmluZWQgYnkgcm93IGlkZW50JywgJ2VuY3J5cHRpb24nOiAnSFM1MTIgKEhNQUMtU0hBLTUxMiknLCAnZnlpJzogJ1RoZSBrZXkgb2YgdGhpcyBkYXRhIGlzIDEnLCAnc2VjdXJlREInOiAnaXMgQXdlc29tZSEnLCAnaG9vcmF5JzogJ2ZvciBpbmZpbnRlIGNvbHVtbiBzcGFjZSEnLCAndXNlX2Nhc2VzJzogJ1NlY3VyZSBsb2dnaW5nIG9yIHNlY3VyZSBvYmplY3Qgc2hhcmluZycsICdjb21pbmdfc29vbic6ICdTZWN1cmVBUEknLCAnaW5zZXJ0X3Rlc3QnOiAncGFzc2VkIScsICdyYW5kb21fZGF0YSc6ICc3S1hMJ319Ig.gtXqD9bzpcgId0CsHdyMnMWLYSAfK--_U8hOfDCS--w}
+
+# SecureAPI
+
+curl http://127.0.0.1:5000/test/keys | python -mjson.tool      
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   523  100   523    0     0    523      0  0:00:01 --:--:--  0:00:01  510k
+{
+    "keys": [
+        "{ 0: eyJhbGciOiJIUzI1NiJ9.InsgdGFibGVfMTogeydrZXlzJzogJ0tleXMgYXJlIGRlZmluZWQgYnkgcm93IGlkZW50JywgJ2VuY3J5cHRpb24nOiAnSFM1MTIgKEhNQUMtU0hBLTUxMiknLCAnZnlpJzogJ1RoZSBrZXkgb2YgdGhpcyBkYXRhIGlzIDEnLCAnc2VjdXJlREInOiAnaXMgQXdlc29tZSEnLCAnaG9vcmF5JzogJ2ZvciBpbmZpbnRlIGNvbHVtbiBzcGFjZSEnLCAndXNlX2Nhc2VzJzogJ1NlY3VyZSBsb2dnaW5nIG9yIHNlY3VyZSBvYmplY3Qgc2hhcmluZycsICdjb21pbmdfc29vbic6ICdTZWN1cmVBUEknLCAnaW5zZXJ0X3Rlc3QnOiAncGFzc2VkIScsICdyYW5kb21fZGF0YSc6ICc3S1hMJ319Ig.gtXqD9bzpcgId0CsHdyMnMWLYSAfK--_U8hOfDCS--w}"
+    ]
+}
+
+curl http://127.0.0.1:5000/test/get/0 | python -mjson.tool     ~/SecureDB 1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   512  100   512    0     0  34133      0 --:--:-- --:--:-- --:--:-- 34133
+{
+    "0": "eyJhbGciOiJIUzI1NiJ9.InsgdGFibGVfMTogeydrZXlzJzogJ0tleXMgYXJlIGRlZmluZWQgYnkgcm93IGlkZW50JywgJ2VuY3J5cHRpb24nOiAnSFM1MTIgKEhNQUMtU0hBLTUxMiknLCAnZnlpJzogJ1RoZSBrZXkgb2YgdGhpcyBkYXRhIGlzIDEnLCAnc2VjdXJlREInOiAnaXMgQXdlc29tZSEnLCAnaG9vcmF5JzogJ2ZvciBpbmZpbnRlIGNvbHVtbiBzcGFjZSEnLCAndXNlX2Nhc2VzJzogJ1NlY3VyZSBsb2dnaW5nIG9yIHNlY3VyZSBvYmplY3Qgc2hhcmluZycsICdjb21pbmdfc29vbic6ICdTZWN1cmVBUEknLCAnaW5zZXJ0X3Rlc3QnOiAncGFzc2VkIScsICdyYW5kb21fZGF0YSc6ICc3S1hMJ319Ig.gtXqD9bzpcgId0CsHdyMnMWLYSAfK--_U8hOfDCS--w"
+}
+
+
+
